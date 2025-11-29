@@ -36,6 +36,12 @@ app.use("/api/ai", require("./routes/ai.routes"));
 app.use("/api/payments", require("./routes/payments.routes"));
 app.use("/api/users", require("./routes/users.routes"));
 app.use("/api/athletes", require("./routes/athletes.routes")); // Added athletes route
+app.use("/api/biomechanics", require("./routes/biomechanics.routes")); // Added biomechanics route
+app.use("/api/training-load", require("./routes/training-load.routes")); // Added training-load route
+app.use("/api/injury", require("./routes/injury.routes")); // Added injury route
+app.use("/api/equipment", require("./routes/equipment.routes")); // Added equipment route
+app.use("/api/performance", require("./routes/performance.routes")); // Added performance route
+app.use("/api/behavioral", require("./routes/behavioral.routes")); // Added behavioral route
 
 // Health check
 app.get("/health", (req, res) => {

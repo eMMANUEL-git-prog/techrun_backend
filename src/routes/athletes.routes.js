@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { authenticateToken } = require("../middleware/auth");
-const { pool } = require("../config/database");
+const pool = require("../config/database");
 
 // Get all athletes (admin, coach, medic, nutritionist can view)
 router.get("/", authenticateToken, async (req, res) => {
