@@ -35,6 +35,7 @@ app.use("/api/whereabouts", require("./routes/whereabouts.routes"));
 app.use("/api/ai", require("./routes/ai.routes"));
 app.use("/api/payments", require("./routes/payments.routes"));
 app.use("/api/users", require("./routes/users.routes"));
+app.use("/api/athletes", require("./routes/athletes.routes")); // Added athletes route
 
 // Health check
 app.get("/health", (req, res) => {
